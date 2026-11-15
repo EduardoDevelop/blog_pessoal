@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: #f4f1de;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #f4f1de;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header a:hover {
+  color: chocolate;
+  text-decoration: underline;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* list-style: none; */
+  width: 100%;
+}
+
+#home,
+#caixa,
+#sobreMim {
+  scroll-margin-top: 80px; /* use scroll-margin-top para deixar os títulos visíveis após o clique */
+}
+main {
+  max-width: 1400px;
+  padding: 5px 20px;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+main h2 {
+  text-align: center;
+}
+
+.boas {
+  font-size: 120px;
+}
+
+.boasVindas {
+  font-size: 22px;
+}
+
+section {
+  background-color: #f4f1de;
+  margin-bottom: 44px;
+  padding: 14px; /* Adidiona o espaçamneto interno */
+  border-radius: 16px; /*Arredonda os cantos */
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+  /* 0 — não desloca a sombra para os lados.
+  4px — desloca a sombra 4px para baixo.
+  15px — define o desfoque; quanto maior, mais suave fica a sombra.
+  rgba(0, 0, 0, 0.1) — sombra preta com apenas 10% de opacidade. */
+}
+
+.facePag {
+  padding: 30px;
+}
+
+.facePag p {
+  padding: 0px 200px 0px 200px;
+  text-align: center;
+}
+
+.conteudos {
+  display: flex; /*alinha horizontalmente*/
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.conteudos article {
+  flex: 1; /*Deixa os elementos alinhados lado a lado*/
+  min-width: 180px;
+  min-height: 240px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden; /* A imagem pode sobresair da borda, essa tag ajeita isso */
+}
+
+.conteudos-imagem {
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.conteudo-1 {
+  background-image: url(img/kidGOku.jpg);
+  background-position: center;
+}
+
+.conteudo-2 {
+  background-image: url(img/sptify.jpg);
+  background-position: center;
+}
+
+.conteudo-3 {
+  background-image: url(img/arquivo.jpg);
+  background-position: center 15%;
+}
+
+.conteudos article h3 {
+  font-size: 20px;
+  padding: 14px 16px 4px 16px;
+}
+
+.conteudos article p {
+  padding: 0 16px;
+  flex-grow: 1; /* Todos os elementos se alinham na mesma altura, deixando todos iguais */
+}
+
+.caixasPots {
+  display: flex; /* Alinha horizontalmente */
+  flex-wrap: wrap; /* Quebra linhas */
+  gap: 10px; /* Espaço entre os elementos */
+}
+
+.caixasPots article {
+  flex: 0 0 calc(50% - 5px);
+  min-width: 0;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex; /* alinha horizontalmente */
+  flex-direction: column; /* alinha verticalmente */
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+}
+
+.caixasPots h3 {
+  padding-bottom: 8px;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+#sobreMim {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* feito a pagina do "Sobre mim", agora é a pagina dos pots.  */
