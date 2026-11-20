@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f4f1de;
+}
+
 header {
   display: flex;
   font-size: 20px;
@@ -19,11 +23,12 @@ header {
 header a {
   text-decoration: none;
   color: black;
+  padding: 4px;
 }
 
 header a:hover {
-  color: chocolate;
-  text-decoration: underline;
+  background-color: #c4c2b5;
+  border-radius: 20px;
 }
 
 nav {
@@ -50,6 +55,7 @@ section {
   font-size: 18px;
   border-radius: 28px;
   text-align: center;
+  background-color: #f4f1de;
 }
 
 body {

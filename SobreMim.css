@@ -5,13 +5,19 @@
 }
 
 body {
-  background-color: white;
+  background-color: #f4f1de;
 }
 
 main {
   max-width: 1300px;
   padding: 5px 20px;
   margin: 0 auto;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 4px;
 }
 
 header {
@@ -27,9 +33,9 @@ header {
   z-index: 1000;
 }
 
-header a {
-  text-decoration: none;
-  color: black;
+header a:hover {
+  background-color: #c4c2b5;
+  border-radius: 20px;
 }
 
 nav {
@@ -52,24 +58,33 @@ section {
   margin: 60px 0px;
   padding: 16px;
   border-radius: 22px;
+  background-color: #f4f1de;
 }
 
 section h1 {
   text-align: center;
   width: 100%;
+  border-bottom: 2px solid #17283d;
 }
 
 img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  transform: translateY(10px);
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+#imagemaminha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 section p {
   flex: 1;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 footer {
